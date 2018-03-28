@@ -1,0 +1,6 @@
+- hosts: jenkins_agents
+  sudo: yes
+  roles:
+    - role: java_internal
+    - role: geerlingguy.git
+    - role: jenkins_agent
