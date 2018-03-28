@@ -3,4 +3,4 @@
   roles:
     - role: java_internal
     - role: geerlingguy.git
-    - role: jenkins_agent
+    - role: jenkins_agents
