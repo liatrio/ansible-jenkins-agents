@@ -1,0 +1,5 @@
+---
+- name: grab agent jar
+  command: wget http://jenkins.fastfeedback.rocks/jnlpJars/agent.jar
+- name: Connect to master
+  shell: nohup java -jar agent.jar -jnlpUrl http://jenkins.fastfeedback.rocks/computer/slave-{{ansible_play_hosts.index(inventory_hostname) + 1}}/slave-agent.jnlp &
