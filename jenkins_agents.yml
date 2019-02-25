@@ -2,6 +2,5 @@
   sudo: yes
   roles:
     - role: java_internal
-    - role: geerlingguy.git
     - role: docker
     - role: jenkins_agents
